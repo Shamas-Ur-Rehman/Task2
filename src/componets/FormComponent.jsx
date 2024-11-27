@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function FormComponent() {
   return (
@@ -45,13 +46,15 @@ function FormComponent() {
               и пользовательским соглашением
             </label>
           </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
+        </form>
+        <div className="flex justify-center">
+          <Link
+            to={"/"}
+            className="mt-4 bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 transition duration-200"
           >
             Отправить
-          </button>
-        </form>
+          </Link>
+        </div>
       </div>
     </div>
   );
